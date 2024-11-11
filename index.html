@@ -5,17 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        a {
+        a,p {
             color: aliceblue;
+        }
+        pre {
+            color: aliceblue;
+            font-family:'Times New Roman', Times, serif
         }
     </style>
 </head>
 <body bgcolor="black">
     <a href="keywords.l">exp 2 keywords comments etc</a><br />
     <a href="word_count.l">exp 2 word count of given word</a><br />
-    <a href="words-with-a.l">exp 3 words starting with A</a><br />
+    <a href="words-with-a.l">exp 3 words starting with A</a><p>for starting and ending, just add [aA] at the end</p>
     <a href="s-e-with-a.l">exp 3 words starting and ending with A</a><br />
     <a href="lower-upper-case.l ">exp 4 lower-upper case</a><br />
     <a href="dec-to-hex.l">exp 5 decimal to hexadecimal</a><br />
+    <a href="dec-to-binary.l">exp 5 decimal to binary</a><br />
+    <a href="link-counter.l">exp 6 link counter</a><br />
+    <a href="link-counter.l">exp 7 postfix-eval.l   |||</a><a href="postfix-eval.y">postfix-eval.y</a><br />
+    <a href="infix-to-postfix.l">exp 7 infix-to-postfix.l   |||</a><a href="infix-to-postfix.y">infix-to-postfix.y</a><br />
+    <a href="calc-recovery.l">exp 8 calc-recovery.l    |||</a><a href="calc-recovery.y">exp 8 calc-recovery.y</a><br />
+    <a href="for.l">exp 9 for.l    |||</a><a href="for.y">exp 9 for.y</a><br />
+    <a href="ic.l">exp 10 ic.l    |||</a><a href="ic.y">exp 10 ic.y</a><br />
+    <a href="calc-recovery.l">exp 11 calc-recovery.l    |||</a><a href="calc-recovery.y">exp 11 calc-recovery.y</a><br />
+    <a href="email.l">exp 12 email checker</a><br />
+    <pre>
+--------
+USAGE
+--------
+For single .l file programs:
+lex filename.l
+gcc lex.yy.c
+./a.out text.txt
+--------------------------------
+For .l and .y file programs:
+flex filename.l
+bison filename.y
+gcc filename.tab.c -lfl
+./a.out
+    </pre>
 </body>
 </html>
